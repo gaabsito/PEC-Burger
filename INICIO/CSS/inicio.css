@@ -68,16 +68,17 @@ nav ul li:first-child {
     margin-right: auto;
     display: flex;
     justify-content: space-around;
-    width: 62%;
+    width: 75%;
 }
 
   
 .parte-guay-dcha {
-    margin-left: 77px;
+    margin-left: 72px;
     margin-right: 15px;
     display: flex;
-    width: 23%;
-    justify-content: space-around;
+    width: 27%;
+    justify-content: space-between;
+    
 }
 
 .custom-boton {
@@ -86,7 +87,7 @@ nav ul li:first-child {
     border: none;
     padding: 20px 35px;
     font-size: 16px;
-    border-radius: 0px 30% 0px 30%;
+    border-radius: 0px 25% 0px 25%;
     transition: background-color 0.3s ease;
     font-weight: bold;
   }
@@ -103,7 +104,7 @@ nav ul li:first-child {
     border: none;
     padding: 15px 30px;
     font-size: 16px;
-    border-radius: 0px 30% 0px 30%;
+    border-radius: 25px 0% 25px 0%;
     transition: background-color 0.3s ease;
     font-weight: bold;
   }
@@ -120,25 +121,17 @@ nav ul li:first-child {
 
 
 
-  
 footer {
     background-color: #ffffff;
-    color: #000000;
     padding: 30px 40px;
     align-items: center;
     text-align: center;
     margin-top: auto; /* Coloca el footer al final de la página */
-    font-size: 20px; /*tamaño letra header*/
-    font-weight: bold; /*letra negrita header*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*tipografía para el header*/
+     
 }
-
 footer p {
     margin: 0;
     font-size: 15px;
-}
-.img-fin{
-    justify-content: space-around;  
 }
 
 .footer-links {
@@ -148,18 +141,27 @@ footer p {
     display: flex;
     max-width: 800px;
     margin: 0 auto;
+   
 }
-
-.footer-links a {
-
+.item-footer {
     color: #000000;
     text-decoration: none;
-    font-weight: bold;
-    justify-content: space-around;
-    
+    transition: color 0.3s ease;
+    font-size: 20px; /*tamaño letra footer*/
+    font-weight: bold; /*letra negrita footer*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*tipografía para el footer*/
     
 }
 
-.footer-links a:hover {
-    color: #de1313;
+.item-footer:hover {
+    color: #ff3b55;
 }
+
+
+
+.img-fin{
+    justify-content: space-around;  
+}
+
+
+
