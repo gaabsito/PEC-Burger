@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
+}
+.item-header{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+header {
+    background-color: #fff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+
+}
+
+.img-logo {
+    width: 115px;
+    margin-left: 35px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 57px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+.item-header {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 20px; /*tamaño letra header*/
+    font-weight: bold; /*letra negrita header*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*tipografía para el header*/
+    
+}
+
+.item-header:hover {
+    color: #ff3b55;
+}
+
+.parte-dcha {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding: 50px;
+    display: flex;
+    width: calc(100% - 115px);
+}
+
+.parte-norm-dcha {
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 62%;
+}
+
+  
+.parte-guay-dcha {
+    margin-left: 77px;
+    margin-right: 15px;
+    display: flex;
+    width: 23%;
+    justify-content: space-around;
+}
+
+.custom-boton {
+    background-color: #ffd5d5;
+    color: #ff3b55;
+    border: none;
+    padding: 20px 35px;
+    font-size: 16px;
+    border-radius: 0px 30% 0px 30%;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .custom-boton:hover {
+    background-color:  #ffeff1;
+    color: #000000;
+    font-weight: bold;
+  }
+
+  .custom-boton2 {
+    background-color: #ff3b55;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 0px 30% 0px 30%;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .custom-boton2:hover {
+    background-color: #ffeff1 ;
+    color: #000000;
+    font-weight: bold;
+  }
+
+
+
+
+
+
+
+  
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px 40px;
+    align-items: center;
+    text-align: center;
+    margin-top: auto; /* Coloca el footer al final de la página */
+    font-size: 20px; /*tamaño letra header*/
+    font-weight: bold; /*letra negrita header*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*tipografía para el header*/
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+}
+.img-fin{
+    justify-content: space-around;  
+}
+
+.footer-links {
+    margin-top: 20px;
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-links a {
+
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: space-around;
+    
+    
+}
+
+.footer-links a:hover {
+    color: #de1313;
+}
