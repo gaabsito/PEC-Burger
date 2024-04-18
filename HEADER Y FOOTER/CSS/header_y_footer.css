@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
     background-color: #fff;
+    scroll-behavior: smooth;
 }
 .item-header{
     color: #000000;
@@ -23,13 +24,14 @@ header {
     align-items: center;
     padding-right: 20px;
     padding-left: 20px;
-    background: rgb(250,250,250);
-    background: linear-gradient(180deg, rgba(250,250,250,1) 0%, rgba(251,251,251,1) 28%, rgba(252,252,252,1) 76%, rgba(250,250,250,1) 100%);
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 26%, rgba(244,244,244,1) 54%, rgba(241,241,241,1) 71%, rgba(251,251,251,1) 100%);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
- 
+    height: 100px; /* Altura suficiente para hacer scroll */
+    scroll-behavior: smooth;
 }
 
 
@@ -40,18 +42,18 @@ header.minimizado {
     background-color: #fff; /* Color de fondo del encabezado minimizado */
     /* Otros estilos para el encabezado minimizado */
     padding: 10px;
-    transition: height 0.3s ease;
+    transition: height 0.35s ease;
 }
 
 header.minimizado .item-header {
     font-size: 12px; /* Tamaño de fuente más pequeño */
     margin-left: 28px; /* Espaciado entre elementos más pequeño */
-    transition: height 0.3s ease;
+    transition: height 0.35s ease;
 }
 
 header.minimizado .img-logo {
     width: 70px;
-    transition: height 0.3s ease;
+    transition: height 0.35s ease;
     margin-left: 80px;
 }
 
@@ -60,13 +62,13 @@ header.minimizado .parte-guay-dcha {
     
     font-size: 8px; /* Tamaño de fuente más pequeño */
     margin-left: 24px; /* Espaciado entre elementos más pequeño */
-    transition: height 0.3s ease; 
+    transition: height 0.35s ease; 
 }
 header.minimizado .custom-boton {
     font-size: 10px; /* Tamaño de fuente más pequeño */
     margin: 35px; /* Espaciado entre elementos más pequeño */
     width: 37%;
-    transition: height 0.3s ease; 
+    transition: height 0.35s ease; 
 
 }
 
@@ -74,7 +76,7 @@ header.minimizado .custom-boton2 {
     font-size: 10px; /* Tamaño de fuente más pequeño */
     margin: 35px; /* Espaciado entre elementos más pequeño */
     width: 37%;
-    transition: height 0.3s ease; 
+    transition: height 0.35s ease; 
 
 }
 .img-logo {
@@ -177,6 +179,11 @@ nav ul li:first-child {
     color: #000000;
     font-weight: bold;
   }
+
+
+
+
+
 
 
 
