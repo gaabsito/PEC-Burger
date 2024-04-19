@@ -3,13 +3,15 @@
 }
 body {
     
-    padding: 0;
     font-family: "Lexend", sans-serif;
+    padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
     background-color: #fff;
     scroll-behavior: smooth;
+    background-image: url("../IMG/letrasPEC.png");
+
 }
 .item-header{
     color: #000000;
@@ -25,7 +27,7 @@ header {
     padding-right: 20px;
     padding-left: 20px;
     background: rgb(255,255,255);
-background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 26%, rgba(244,244,244,1) 54%, rgba(241,241,241,1) 71%, rgba(251,251,251,1) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 26%, rgba(244,244,244,1) 54%, rgba(241,241,241,1) 71%, rgba(251,251,251,1) 100%);
     position: fixed;
     top: 0;
     left: 0;
@@ -181,6 +183,125 @@ nav ul li:first-child {
   }
 
 
+.espacio-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color oscuro con opacidad del 50% */
+    z-index: 999; /* Asegura que el div esté por encima de otros elementos */
+}
+.imagen-PEC {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color oscuro con opacidad del 50% */
+    z-index: 1; /* Asegura que el div esté por encima de otros elementos */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/*//*/*//*/*//*/*/
+
+.mogollo {
+    z-index: 1;
+    color: black;
+    
+
+    }    
+
+
+
+.news {
+   outline: none;
+    padding: 50px 0;
+    margin: 0 20px; /* Margen de 20px en los lados derecho e izquierdo */
+    overflow-y: hidden;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel img {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 100%;
+}
+
+.actions {
+    
+    padding: 50px 0;
+    margin: 0 20px; /* Margen de 20px en los lados derecho e izquierdo */
+    text-align: center;
+    z-index: 1;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.action-buttons .btn {
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -196,15 +317,10 @@ footer {
     color: #000000;
     align-items: center;
     text-align: center;
-    margin-top: auto; /* Coloca el footer al final de la página */
-    
-    
-    
-
-   
-   
-     
+    margin-top: auto; /* Coloca el footer al final de la página */ 
 }
+
+
 footer p {
     margin: 0;
     font-size: 15px;
