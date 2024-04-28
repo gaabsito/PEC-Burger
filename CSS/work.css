@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Seymour+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.img-logo {
+    width: 115px;
+    margin-left: 35px;
+}
+
+.parte-dcha {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.parte-norm-dcha a, .footer-links a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+.parte-norm-dcha a:hover, .footer-links a:hover {
+    color: #ff3b55;
+}
+
+.custom-boton, .custom-boton2 {
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 10px;
+    border: none;
+}
+
+.custom-boton {
+    background-color: #ffd5d5;
+    color: #ff3b55;
+}
+
+.custom-boton:hover {
+    background-color: #ffeff1;
+    color: #000;
+}
+
+.custom-boton2 {
+    background-color: #ff3b55;
+    color: #ffffff;
+}
+
+.custom-boton2:hover {
+    background-color: #ffeff1;
+    color: #000;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+main h1, main h2 {
+    font-family: 'Seymour One', sans-serif;
+}
+
+main p, main ul {
+    margin-top: 10px;
+}
+
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+main a {
+    color: #ff3b55;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
