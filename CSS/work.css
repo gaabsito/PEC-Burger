@@ -24,9 +24,12 @@ main {
     align-items: center;
     padding: 15px;
     text-align: center; 
+    margin-top: 50px; 
+    padding-top: 100px; /
+
 }
 
-/* Estilos para elementos dentro de <main> */
+/* Estilos dentro de <main> */
 h1, h2, p, ul, li {
     width: 100%;
     max-width: 800px; 
@@ -38,7 +41,7 @@ ul {
     padding-left: 0; 
 }
 
-/* Responsividad */
+/* Responsive */
 @media (max-width: 768px) {
     header .parte-dcha {
         flex-direction: column;
