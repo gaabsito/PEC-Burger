@@ -1,4 +1,4 @@
-/* Asumiendo que se utiliza header_y_footer.css como base */
+
 @import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Seymour+One&display=swap');
 
@@ -23,20 +23,19 @@ main {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    text-align: center; /* Alinea el texto al centro en dispositivos móviles */
+    text-align: center; 
 }
 
 /* Estilos para elementos dentro de <main> */
 h1, h2, p, ul, li {
     width: 100%;
-    max-width: 800px; /* Define un ancho máximo para el contenido */
+    max-width: 800px; 
     margin-left: auto;
     margin-right: auto;
 }
 
 ul {
-    padding-left: 0; /* Remueve el padding de la lista para alinear con el resto del texto */
-    list-style: none; /* Remueve los bullets de la lista */
+    padding-left: 0; 
 }
 
 /* Responsividad */
@@ -46,10 +45,10 @@ ul {
     }
 
     .custom-boton, .custom-boton2 {
-        margin-bottom: 10px; /* Agrega espacio entre botones en móviles */
+        margin-bottom: 10px; 
     }
 
     h1, h2, p, ul, li {
-        padding: 0 10px; /* Agrega un poco de padding en los lados en móviles */
+        padding: 0 10px; 
     }
 }
