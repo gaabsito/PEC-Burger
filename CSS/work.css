@@ -1,113 +1,55 @@
+/* Asumiendo que se utiliza header_y_footer.css como base */
 @import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Seymour+One&display=swap');
 
-body {
+body, html {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    font-family: 'Lexend', sans-serif;
+}
+
+body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
-header {
-    background-color: #fff;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.img-logo {
-    width: 115px;
-    margin-left: 35px;
-}
-
-.parte-dcha {
-    display: flex;
-    align-items: center;
-    padding: 50px;
-}
-
-.parte-norm-dcha a, .footer-links a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    font-size: 20px;
-}
-
-.parte-norm-dcha a:hover, .footer-links a:hover {
-    color: #ff3b55;
-}
-
-.custom-boton, .custom-boton2 {
-    padding: 15px 30px;
-    font-size: 16px;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 0 10px;
-    border: none;
-}
-
-.custom-boton {
-    background-color: #ffd5d5;
-    color: #ff3b55;
-}
-
-.custom-boton:hover {
-    background-color: #ffeff1;
-    color: #000;
-}
-
-.custom-boton2 {
-    background-color: #ff3b55;
-    color: #ffffff;
-}
-
-.custom-boton2:hover {
-    background-color: #ffeff1;
-    color: #000;
-}
-
-footer {
-    background-color: #ffffff;
-    padding: 30px 40px;
-    align-items: center;
-    text-align: center;
-    margin-top: auto;
+header, footer {
+    flex-shrink: 0;
 }
 
 main {
-    flex: 1;
-    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-align: center; /* Alinea el texto al centro en dispositivos móviles */
 }
 
-main h1, main h2 {
-    font-family: 'Seymour One', sans-serif;
+/* Estilos para elementos dentro de <main> */
+h1, h2, p, ul, li {
+    width: 100%;
+    max-width: 800px; /* Define un ancho máximo para el contenido */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-main p, main ul {
-    margin-top: 10px;
+ul {
+    padding-left: 0; /* Remueve el padding de la lista para alinear con el resto del texto */
+    list-style: none; /* Remueve los bullets de la lista */
 }
 
-main ul {
-    list-style-type: none;
-    padding: 0;
-}
+/* Responsividad */
+@media (max-width: 768px) {
+    header .parte-dcha {
+        flex-direction: column;
+    }
 
-main li {
-    margin-bottom: 10px;
-}
+    .custom-boton, .custom-boton2 {
+        margin-bottom: 10px; /* Agrega espacio entre botones en móviles */
+    }
 
-main a {
-    color: #ff3b55;
-    text-decoration: none;
-}
-
-main a:hover {
-    text-decoration: underline;
+    h1, h2, p, ul, li {
+        padding: 0 10px; /* Agrega un poco de padding en los lados en móviles */
+    }
 }
