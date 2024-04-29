@@ -525,10 +525,26 @@ nav.principal a:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
   display: none;
-  z-index: 999;
+  z-index: 9999;
+  pointer-events: none;
+  width: auto; /* Ancho automático para adaptarse al contenido */
+  max-width: 300px; /* Ancho máximo para evitar que la ventana se vuelva demasiado ancha */
+  height: auto; /* Altura automática para adaptarse al contenido */
+  max-height: 400px; /* Altura máxima para evitar que la ventana se vuelva demasiado alta */
+  
+  
 }
 
+[data-title] {
+  font-family: 'Seymour One', sans-serif;
+}
 
+#ventanaEmergente.ventana-emergente{
+size: 200px;
+}
+.h3-txtxxxxxx{
+  font-family: "Seymour One", sans-serif;
+}
 
 
 
@@ -543,24 +559,22 @@ nav.principal a:hover {
 /*TEXTO PRE-CARRUSEL*/
 .container-carrusel222 {
 
-  background: rgb(255, 59, 85);
-  background: radial-gradient(circle, rgba(255, 59, 85, 1) 0%, rgba(255, 71, 95, 1) 17%, rgba(246, 51, 77, 1) 100%, rgba(255, 121, 138, 1) 100%, rgba(245, 128, 143, 1) 100%);
+  
+  background-image: url("../IMG/pec_burguer-removebg-preview.png");
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.534);
   
 
 
 }
 .cont-txt-pre-carrusel{
 padding-top: 110px;
+color: #000000;
+font-weight: bold;
+
 
 }
-.txt-pre-carrusel{
-  text-align: center;
-  align-items: center; /* Centra verticalmente */
-  justify-content: center; /* Centra horizontalmente */
-  font-weight: bold;
-  font-size: 40px;
-  
-}
+
 
 
 
@@ -572,6 +586,7 @@ padding-top: 110px;
   width: 100%;
   cursor: pointer;
   align-items: center;
+ 
 
 }
 
@@ -582,12 +597,16 @@ padding-top: 110px;
   transition: transform 0.3s ease;
   /* Transición suave */
   align-self: center;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 3));
+  
+  
 
 }
 
 .img-carrusel222:hover {
   transform: scale(1.1);
   /* Escala de 1.1 cuando el cursor está sobre la imagen */
+  filter: drop-shadow(6 4px 12px rgba(0, 0, 0, 6))
 }
 
 

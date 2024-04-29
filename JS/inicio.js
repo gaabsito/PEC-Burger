@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /*VENTANA EMERGENTE PARA EL CARRUSEL DESLIZANTE*/
 document.addEventListener('DOMContentLoaded', function () {
   let timeoutId;
+  let lastScrollTop = 0; // Variable para almacenar la última posición de desplazamiento
 
   const imagenes = document.querySelectorAll('.img-carrusel222');
   const ventanaEmergente = document.getElementById('ventanaEmergente');
@@ -60,13 +61,23 @@ document.addEventListener('DOMContentLoaded', function () {
       imagen.addEventListener('mouseleave', cancelarTimeout);
   });
 
+  // Evento de desplazamiento de la ventana
+  window.addEventListener('scroll', function() {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScroll > lastScrollTop){
+          // Desplazamiento hacia abajo
+          ventanaEmergente.style.display = 'none'; // Ocultar la ventana emergente al desplazarse hacia abajo
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para móviles o navegadores con ventana inferior
+  });
+
   function iniciarTimeout(event) {
       const titulo = event.target.getAttribute('data-title');
       const ingredientes = event.target.getAttribute('data-ingredients');
 
       timeoutId = setTimeout(() => {
           mostrarVentana(titulo, ingredientes, event.target);
-      }, 1000);
+      }, 500);
   }
 
   function cancelarTimeout() {
@@ -79,14 +90,17 @@ document.addEventListener('DOMContentLoaded', function () {
       const ventanaAncho = ventanaEmergente.offsetWidth;
       const ventanaAlto = ventanaEmergente.offsetHeight;
       const ventanaX = imagenRect.left + (imagenRect.width / 2) - (ventanaAncho / 2);
-      const ventanaY = imagenRect.top - ventanaAlto - 0; // Modificado para acercar más la ventana
+      const ventanaY = imagenRect.top - ventanaAlto - 20;
 
-      ventanaEmergente.innerHTML = `<h3>${titulo}</h3><p>${ingredientes}</p>`;
+      ventanaEmergente.innerHTML = `<h3 class=""><strong>${titulo}</strong></h3><p>${ingredientes}</p>`;
       ventanaEmergente.style.left = ventanaX + 'px';
       ventanaEmergente.style.top = ventanaY + 'px';
       ventanaEmergente.style.display = 'block';
   }
 });
+
+
+
 
 
 
