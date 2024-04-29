@@ -1,23 +1,21 @@
+/*CARRUSEL AUTOMÁTICO (CONTROL)*/
+var myCarousel = new bootstrap.Carousel(document.getElementById('miCarrusel'), {
+  interval: 6000 // tiempo para pasar de una imagen a otra
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Reinicia el intervalo del carrusel después de que el usuario realice alguna acción
+document.addEventListener("DOMContentLoaded", function () {
+  var carouselEl = document.getElementById('miCarrusel');
+  carouselEl.addEventListener('mouseover', function () {
+      myCarousel.pause();
+  });
+  carouselEl.addEventListener('mouseleave', function () {
+      myCarousel.cycle();
+  });
+  window.addEventListener('scroll', function () {
+      myCarousel.cycle();
+  });
+});
 
 
 
@@ -42,6 +40,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
+
+
+
+
+
+
+/*VENTANA EMERGENTE PARA EL CARRUSEL DESLIZANTE*/
+document.addEventListener('DOMContentLoaded', function () {
+  let timeoutId;
+
+  const imagenes = document.querySelectorAll('.img-carrusel222');
+  const ventanaEmergente = document.getElementById('ventanaEmergente');
+
+  imagenes.forEach(imagen => {
+      imagen.addEventListener('mouseenter', iniciarTimeout);
+      imagen.addEventListener('mouseleave', cancelarTimeout);
+  });
+
+  function iniciarTimeout(event) {
+      const titulo = event.target.getAttribute('data-title');
+      const ingredientes = event.target.getAttribute('data-ingredients');
+
+      timeoutId = setTimeout(() => {
+          mostrarVentana(titulo, ingredientes, event.target);
+      }, 1000);
+  }
+
+  function cancelarTimeout() {
+      clearTimeout(timeoutId);
+      ventanaEmergente.style.display = 'none';
+  }
+
+  function mostrarVentana(titulo, ingredientes, imagen) {
+      const imagenRect = imagen.getBoundingClientRect();
+      const ventanaAncho = ventanaEmergente.offsetWidth;
+      const ventanaAlto = ventanaEmergente.offsetHeight;
+      const ventanaX = imagenRect.left + (imagenRect.width / 2) - (ventanaAncho / 2);
+      const ventanaY = imagenRect.top - ventanaAlto - 0; // Modificado para acercar más la ventana
+
+      ventanaEmergente.innerHTML = `<h3>${titulo}</h3><p>${ingredientes}</p>`;
+      ventanaEmergente.style.left = ventanaX + 'px';
+      ventanaEmergente.style.top = ventanaY + 'px';
+      ventanaEmergente.style.display = 'block';
+  }
+});
 
 
 
