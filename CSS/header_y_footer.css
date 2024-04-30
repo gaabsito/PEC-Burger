@@ -8,7 +8,6 @@ body {
   /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
   background-color: #fff;
   scroll-behavior: smooth;
-  margin: 0%;
 }
 
 header {
@@ -21,7 +20,7 @@ header {
   position: fixed;
   /*LEFT NO HACE FALTA*/
   padding-left: 80px;
-  padding-right: 20px;
+  padding-right: 80px;
   padding-top: 10px;
   padding-bottom: 10px;
   z-index: 1;
@@ -182,7 +181,7 @@ nav.principal a:hover {
 
 
 .parte-guay-dcha {
-  margin-right: 230px;
+  margin-right: 50px;
   
   display: flex;
   width: 40%;
@@ -299,29 +298,6 @@ nav.principal a:hover {
   display: block;
   text-decoration: none;
 }
-
-
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  /* Mostramos el menú al hacer hover */
-}
-
-#closeBtn {
-  display: block;
-  background-color: transparent;
-  border: none;
-  color: rgb(255, 255, 255);
-  padding: 8px 16px;
-  text-align: center;
-  cursor: pointer;
-
-}
-
-#closeBtn:hover {
-  background-color: #ddd;
-}
-
 
 
 
@@ -512,13 +488,9 @@ footer p {
     background: rgb(255, 255, 255);
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(250, 250, 250, 1) 26%, rgba(244, 244, 244, 1) 54%, rgba(241, 241, 241, 1) 71%, rgba(251, 251, 251, 1) 100%);
     position: relative;
-  
+    padding-left: 80px;
+    padding-right: 60px;
     width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-   
 
   }
 
@@ -535,9 +507,8 @@ footer p {
   }
 
   .img-logo {
-    margin-left: 25px;
+    margin-left: -40px;
     width: 85px;
-    padding: 10px;
 
   }
 
@@ -548,9 +519,7 @@ footer p {
   }
 
 .parte-izqda{
-  margin-right: 0px;
-  padding-right: 0px;
-    margin-left: 0px;
+  margin-right: 125px;
 }
   .parte-dcha {
     display: none;
@@ -723,7 +692,6 @@ footer p {
 
     position: relative;
     display: inline-block;
-    margin-right: 45px;
 
   }
 
