@@ -143,3 +143,49 @@ carousel.addEventListener('mousemove', (e) => {
 
 
 
+/*VENTANA EMERGENTE PARA PEDIDOS*/
+let hasScrolled = false;
+
+window.onscroll = function() {
+  hasScrolled = true;
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if ((document.body.scrollTop > (document.documentElement.clientHeight * 1.6) || document.documentElement.scrollTop > (document.documentElement.clientHeight * 1.7)) && hasScrolled) {
+    document.getElementById("emergente-pedido").style.left = "0px";
+  } else {
+    document.getElementById("emergente-pedido").style.left = "-2500px";
+  }
+}
+
+document.getElementById("close").onclick = function() {
+  document.getElementById("emergente-pedido").style.left = "-2500px";
+};
+
+// Nuevo código para cerrar la ventana emergente deslizando hacia la izquierda con el mouse
+let isMouseDown = false;
+let initialX = null;
+
+document.getElementById("emergente-pedido").addEventListener("mousedown", function(event) {
+  isMouseDown = true;
+  initialX = event.clientX;
+});
+
+document.addEventListener("mouseup", function() {
+  isMouseDown = false;
+  initialX = null;
+});
+
+document.getElementById("emergente-pedido").addEventListener("mousemove", function(event) {
+  if (isMouseDown && initialX !== null) {
+    const currentX = event.clientX;
+    const diffX = initialX - currentX;
+
+    if (diffX > 50) { // Puedes ajustar este valor según la sensibilidad deseada
+      document.getElementById("emergente-pedido").style.left = "-2500px";
+      isMouseDown = false;
+      initialX = null;
+    }
+  }
+});
