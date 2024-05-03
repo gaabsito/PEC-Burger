@@ -805,7 +805,7 @@ input[type="checkbox"],
 .emergente-pedido {
   position: fixed;
   top: 50%;
-  left: -250px;
+  left: -300px;
   width: 290px;
   height: 100px;
   background-color: #ff3b55;
