@@ -930,9 +930,14 @@ footer p {
 .redes {
   display: flex;
   justify-content: center;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 40px;
   background: rgb(255, 59, 85);
+  transition: transform 0.3 ease;
 
+}
+.redes :hover {
+  transform: scale(1.05);
 }
 
 
