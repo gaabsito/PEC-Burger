@@ -23,7 +23,7 @@ header {
   padding-right: 80px;
   padding-top: 10px;
   padding-bottom: 10px;
-  z-index: 999;
+  z-index: 1;
   width: 100%;
 
 }
@@ -301,24 +301,61 @@ nav.principal a:hover {
 
 
 
-.dropdown:hover .dropdown-content {
-  display: block;
-  /* Mostramos el menú al hacer hover */
-}
 
-#closeBtn {
-  display: block;
+
+
+
+
+
+
+/* Estilos para el botón hamburguesa */
+.dropbtn {
+  display: none;
   background-color: transparent;
+  /* Hacemos el fondo transparente */
   border: none;
-  color: rgb(255, 255, 255);
-  padding: 8px 16px;
-  text-align: center;
+  /* Eliminamos el borde */
+  padding: 0;
+  /* Eliminamos el relleno para que las líneas queden bien alineadas */
   cursor: pointer;
-
 }
 
-#closeBtn:hover {
-  background-color: #ddd;
+.dropbtn .bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background-color: #000000;
+  margin: 4px auto;
+  /* Espaciado entre las barras */
+}
+
+/* Cambiamos el color de las barras al pasar el mouse */
+.dropbtn:hover .bar {
+  background-color: brown;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  /* Ocultamos el menú por defecto */
+  position: absolute;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  right: 0;
+  /* Posicionamos el menú a la derecha */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
 }
 
 
