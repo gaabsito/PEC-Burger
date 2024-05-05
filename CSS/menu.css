@@ -362,13 +362,14 @@ nav.principal a:hover {
 }
 
 .txt-entr {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 15px;
 
 }
 
 .tx-en {
   text-align: center;
+  padding: 40PX;
 }
 
 .txt-ham {
@@ -378,6 +379,8 @@ nav.principal a:hover {
 
 .tx-ham {
   text-align: center;
+  padding: 30PX;
+
 }
 
 .category {
@@ -584,42 +587,6 @@ nav.principal a:hover {
 
 
 
-
-/*SECCIONES IMAGENES PARA LA CARTA*/
-
-/* Estilos para las secciones de fondo */
-.background-sections {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  /* Asegura que estén detrás del contenido */
-  overflow: hidden;
-  /* Evita que las imágenes se desborden */
-}
-
-/* Estilos para las imágenes de fondo */
-.background-sections img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Ajusta la imagen al tamaño de la sección */
-  position: absolute;
-  /* Posición absoluta dentro del contenedor */
-  top: 0;
-  left: 0;
-  opacity: 0;
-  /* Inicialmente oculto */
-  transition: opacity 0.5s ease;
-  /* Transición suave de opacidad */
-}
-
-/* Clase activa para mostrar la imagen */
-.active img {
-  opacity: 1;
-}
 
 
 
