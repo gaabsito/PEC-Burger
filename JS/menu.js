@@ -22,7 +22,8 @@
 
   
   
-  
+
+  /*APERTURA PARA INFORMACION*/  
   function toggleInfo(item) {
     var details = item.querySelector('.details');
     var allItems = document.querySelectorAll('.item');
@@ -54,6 +55,15 @@
 
 
 
+
+
+
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
 
 
