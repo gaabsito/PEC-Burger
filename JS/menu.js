@@ -69,3 +69,39 @@ function scrollToSection(sectionId) {
 
 
 
+
+
+
+/*PARTE DEL TEXTO QUE CAMBIA*/
+var textos = [
+  "DELICIOUS DISHES AWAIT",
+  "EXPERIENCE CULINARY BLISS",
+  "TASTE THE MAGIC OF OUR MENU",
+  "UNFORGETTABLE FLAVORS EVERY BITE",
+  "OUR FANTASTIC MENU"
+];
+
+function cambiarTexto() {
+  var textoAleatorio = textos[Math.floor(Math.random() * textos.length)];
+  document.getElementById("texto").innerHTML = textoAleatorio;
+  setTimeout(function() {
+    cambiarTextoAleatoriamente();
+  }, 5000); // Cambia el texto aleatoriamente cada 5 segundos
+}
+
+function cambiarTextoAleatoriamente() {
+  var textoAleatorio = textos[Math.floor(Math.random() * textos.length)];
+  document.getElementById("texto").innerHTML = textoAleatorio;
+  setTimeout(function() {
+    cambiarTextoAleatoriamente();
+  }, 5000); // Cambia el texto aleatoriamente cada 5 segundos
+}
+
+// Iniciar con un texto aleatorio al cargar la página
+window.onload = function() {
+  cambiarTexto();
+};
+
+
+
+
