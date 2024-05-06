@@ -396,7 +396,7 @@ nav.principal a:hover {
 }
 
 .carousel-inner h2 {
-  font-size: 5em;
+  font-size: 4.8em;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -471,6 +471,8 @@ nav.principal a:hover {
 
 .h2-carr {
   font-weight: bold;
+  font-family: "Seymour One", sans-serif;
+  
 }
 
 .carousel-image {
@@ -481,6 +483,34 @@ nav.principal a:hover {
   /* Esto asegura que la imagen cubra el área sin distorsionarse */
 }
 
+.our-menu{
+  text-decoration: none; /* Quita el subrayado */
+ 
+  color: #ffffff;
+  
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-left: 2px;
+  margin-right: 8px;
+}
+.our-menu:hover {
+  color: #ffffff;
+  background-color: #ff3b55;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+ 
+  
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 25px 0% 25px 0%;
+    
+}
 
 
 
@@ -524,6 +554,10 @@ nav.principal a:hover {
   background-repeat: no-repeat;
 
 
+}
+
+.ready-txt{
+  font-family: "Seymour One", sans-serif;
 }
 
 .img-carta-sec {
@@ -662,6 +696,7 @@ font-weight: bold;
   text-align: center;
   padding-top: 70px;
   font-weight: bolder;
+  font-family: "Seymour One", sans-serif;
 }
 
 .contenido {
@@ -1152,7 +1187,10 @@ footer p {
 
 
 
-
+  .ready-txt{
+    font-family: "Seymour One", sans-serif;
+    font-size: 21px;
+  }
 
 
 
@@ -1165,7 +1203,6 @@ footer p {
 
 
   }
-
 
 
 .texto-izquierda{
@@ -1374,3 +1411,4 @@ footer p {
   }
 
 }
+
